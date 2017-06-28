@@ -37,6 +37,8 @@ apt-get -o Dpkg::Options::="--force-confold" install \
     libffi-dev          \
     build-essential     \
     libperl-dev         \
+    htop                \
+    vim                 \
     -y
 
 for i in 1 2 3 4 5; do easy_install pip && break || sleep 2; done
