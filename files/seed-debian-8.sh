@@ -39,6 +39,7 @@ apt-get -o Dpkg::Options::="--force-confold" install \
     libperl-dev         \
     htop                \
     vim                 \
+    curl                \
     -y
 
 for i in 1 2 3 4 5; do easy_install pip && break || sleep 2; done
