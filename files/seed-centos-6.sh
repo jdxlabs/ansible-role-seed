@@ -35,9 +35,9 @@ yum install \
   curl \
   -y
 
-# htop
 wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 rpm -ihv epel-release-6-8.noarch.rpm
+yum install -y htop
 
 easy_install \
     virtualenv \
