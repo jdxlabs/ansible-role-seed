@@ -28,7 +28,13 @@ yum install \
   libxslt-devel \
   perl-devel \
   automake \
+  vim \
+  curl \
   -y
+
+# htop
+wget dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
+rpm -ihv epel-release-7-11.noarch.rpm
 
 for i in 1 2 3 4 5; do easy_install pip && break || sleep 2; done
 

@@ -31,7 +31,13 @@ yum install \
   libxslt-devel \
   perl-devel \
   automake \
+  vim \
+  curl \
   -y
+
+# htop
+wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+rpm -ihv epel-release-6-8.noarch.rpm
 
 easy_install \
     virtualenv \
