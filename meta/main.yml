@@ -2,16 +2,23 @@
 galaxy_info:
   author: Jérôme Devoucoux
   description: Make a new host meet Managed Node Requirements and installs latest Ansible.
-  company: Jin
+  company: WeScale
   license: GPLv3
 
   min_ansible_version: 2.1.1.0
 
   platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
     - name: Debian
       versions:
         - jessie
         - stretch
+    - name: Ubuntu
+      versions:
+        - xenial
 
   galaxy_tags:
     - system
